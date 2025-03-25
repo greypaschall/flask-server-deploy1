@@ -9,7 +9,7 @@ def get_db_connection():
     return mysql.connector.connect(
         host="2dsim-ai-storage.mysql.database.azure.com",  # Azure MySQL host
         user = "AiSim@2dsim-ai-storage",
-        password='Mysqlindy6!',
+        password="Mysqlindy6!",
         database="agent_simulation",
     )
 
