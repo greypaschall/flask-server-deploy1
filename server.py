@@ -43,7 +43,7 @@ def add_thought():
         db = get_db_connection()
         cursor = db.cursor()
 
-        sql = """INSERT INTO thoughts (date, time, start_location, thought, action_description, target_location, target_location_description, end_location)
+        sql = """INSERT INTO thoughts (date, time, start_location, thought, action_description, target_location, target_location_description, target_coordinates)
                  VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"""
 
         values = (
