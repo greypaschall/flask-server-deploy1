@@ -7,10 +7,10 @@ app = Flask(__name__)
 # Database Connection Function
 def get_db_connection():
     return mysql.connector.connect(
-        host="2dsim-ai-storage.mysql.database.azure.com",  # Azure MySQL host
-        user="AiSim@2dsim-ai-storage",
-        password="Mysqlindy6!",
-        database="agent_simulation",
+        host='2dsim-ai-storage.mysql.database.azure.com',  # Azure MySQL host
+        user='AiSim@2dsim-ai-storage',
+        password='Mysqlindy6!',
+        database='agent_simulation',
     )
 
 # Fix: Convert timedelta to a string before sending JSON response
